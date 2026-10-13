@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create account · Management System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-body">
+
+  <main class="auth-wrap">
+    <a class="logo-mark" href="index.html" aria-label="Management System home">M</a>
+    <h1>Create your account</h1>
+    <p class="auth-sub">Start organizing your work today.</p>
+
+    <section class="auth-card">
+      <h2>Sign up</h2>
+      <p class="hint">Fill in your details to create an account.</p>
+
+      <form id="register-form" novalidate>
+        <div class="field">
+          <div class="label-row"><label for="name">Full Name</label></div>
+          <input class="input" id="name" name="name" type="text" placeholder="Your name" autocomplete="name">
+          <p class="error-msg" id="name-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <div class="label-row"><label for="email">Email Address</label></div>
+          <input class="input" id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email">
+          <p class="error-msg" id="email-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <div class="label-row"><label for="password">Password</label></div>
+          <div class="input-wrap">
+            <input class="input" id="password" name="password" type="password" placeholder="At least 6 characters" autocomplete="new-password">
+            <button class="show-btn" type="button" data-target="password" aria-pressed="false">Show</button>
+          </div>
+          <p class="error-msg" id="password-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <div class="label-row"><label for="confirm">Confirm Password</label></div>
+          <input class="input" id="confirm" name="confirm" type="password" placeholder="Re-enter your password" autocomplete="new-password">
+          <p class="error-msg" id="confirm-error" role="alert"></p>
+        </div>
+
+        <button class="btn-primary" type="submit">Create Account</button>
+      </form>
+
+      <p class="switch">Already have an account? <a class="link" href="login.html">Sign in</a></p>
+    </section>
+
+    <p class="auth-foot">&copy; 2026 My Website. All rights reserved.</p>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

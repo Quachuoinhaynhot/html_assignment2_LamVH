@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in · Management System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-body">
+
+  <main class="auth-wrap">
+    <a class="logo-mark" href="index.html" aria-label="Management System home">M</a>
+    <h1>Welcome Back!</h1>
+    <p class="auth-sub">Sign in to continue to your account.</p>
+
+    <section class="auth-card">
+      <h2>Login to your account</h2>
+      <p class="hint">Enter your email and password to get started.</p>
+
+      <form id="login-form" novalidate>
+        <div class="field">
+          <div class="label-row"><label for="email">Email Address</label></div>
+          <input class="input" id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email" aria-describedby="email-error">
+          <p class="error-msg" id="email-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <div class="label-row">
+            <label for="password">Password</label>
+            <a class="link" href="#" onclick="alert('Password reset isn\'t set up yet.'); return false;">Forgot password?</a>
+          </div>
+          <div class="input-wrap">
+            <input class="input" id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" aria-describedby="password-error">
+            <button class="show-btn" type="button" data-target="password" aria-pressed="false">Show</button>
+          </div>
+          <p class="error-msg" id="password-error" role="alert"></p>
+        </div>
+
+        <label class="remember"><input type="checkbox" name="remember"> Remember me</label>
+
+        <button class="btn-primary" type="submit">Sign In</button>
+      </form>
+
+      <p class="switch">Don't have an account? <a class="link" href="register.html">Create an account</a></p>
+    </section>
+
+    <p class="auth-foot">&copy; 2026 My Website. All rights reserved.</p>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
